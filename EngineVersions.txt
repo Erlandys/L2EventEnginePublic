@@ -1,4 +1,4 @@
-Sunrise 1.09
-L2jUnity 1.20
-aCis 1.22
-L2Pride 1.22
+Sunrise 1.24
+L2jUnity 1.24
+aCis 1.24
+L2Pride 1.24

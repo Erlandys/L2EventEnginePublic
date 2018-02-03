@@ -1,0 +1,230 @@
+2017-08-27 Rev1.01
+	Added:
+	* Init Sunrise611.
+	* Added BugList tracker.
+	* Fixed AdminControls, Config tabs were not shown as Selected.
+
+2017-08-28 Rev1.02
+	Implemented:
+	* Checking newest engine version.
+	* EventBypass system.
+	* Text in Admin Controls, showing author, skype and engine version.
+	Updated:
+	* Now players can report bugs.
+	* System bugs will be updated automatically every 15 minutes.
+	* Added new bug report type - 'Ideas'.
+	Changed:
+	* After creating new bug file, if it exists, same will be updated.
+	* Added lots of try catch blocks, to catch exceptions and put them to BugList system.
+	* Removed 'System' bugtype, when trying to report.
+	* Now bug report types: [System, Ideas] will be printed separatelly.
+
+2017-08-30 Rev1.03
+	Implemented:
+	* Alpha state of License Checker.
+
+2017-09-03 Rev1.04
+	Implemented:
+	* Interface engine, for easier adaption to other packs.
+	* Changelog function in engine from admin panel.
+	Changed:
+	* Moved HTMLs to core.
+	* Splitted out and engine itself to different folders. Engine is now independent from pack.
+	Updated:
+	* Enabled License checker.
+	* Automatic build for LicenseChecker, HTMLs and Changelog to core.
+
+2017-09-04 Rev1.05
+	Implemented:
+	* Database manager, to install and update database tables when necessary.
+	Updated:
+	* Removed unnecessary changelog printing when loading.
+
+2017-09-06 Rev1.06
+	Fixed:
+	* Bad temporary data table structure.
+	* Interface data.
+	* Now max level is included, if only higher than max level, cannot join event.
+	* Reworked wave respawn, to start and end.
+	* False char info config for map, now must be enabled/disabled, to use.
+	* Fixed couple errors with false char info.
+	Implemented:
+	* Rechecking players, when registration finishes and removing those, who do not meet the requirements.
+	* Checking every second for online players, if there are no enemies, finish the event.
+	* Now player will leave party when player will be moved to event.
+	* Added unequip trigger.
+
+2017-09-06 Rev1.07
+	Updated:
+	* Made configs to be shown by row they should be.
+	Implemented:
+	* False Char Info: Added different configs for Blunt/Sword weapons, if they are magic and if they are 1h or 2h.
+	* False Char Info: Added different configs for Full Body armor sets and One Body armor sets.
+	* False Char Info: Other character name in system messages will be displayed as false.
+	Removed:
+	* False Char Info: Removed Magic/Heavy/Light choices, because gloves/shoes cannot be detected.
+
+2017-09-10 Rev1.08
+	Fixed:
+	* Fixed error, when using splitting type: [Shuffle]
+	* Fixed bugs, when entering game and player should come back to event.
+	* When player comes back from event, and should be restored to the state, which was before event, after teleporting, player was stucked.
+	Implemented:
+	* Admin now can determine if player or admin added bug.
+	* Admin now can see how many system has generated bugs.
+	* Team based events, now can generate parties.
+	* Implemented Debug config, for admins to see full error log (without this config, whole error will be printed only in BugLists file)
+	Updated:
+	* Event is now instanced.
+	* Store players original name color, which was before event and restore when events end.
+
+2017-09-21 Rev1.09
+	Fixed:
+	* Fixed mass skills launch in solo event.
+	* Fixed player teleportation to event (with instance)
+	Implemented:
+	* Bugs are now saved on server shutdown.
+
+2017-10-29 Rev1.10
+	Updated:
+	* Adapted to L2jUnity pack.
+	Fixed:
+	* Fixed errors, when trying to start event scheduler, set next event/phase if there are no available events.
+
+2017-10-29 Rev1.11
+	Fixed:
+	* Fixed creation of bugs through system.
+	* Fixed Event Base name showing.
+	* Fixed rewards editing.
+	* Changed license checker.
+	Implemented:
+	* Implemented sending the request to register, when registration starts.
+	* Implemented feature, that event will set player title with kills/deaths/scores/team scores.
+	* Implemented feature for screen data show, with top 3 players in solo event and with top team in team based event.
+
+2017-11-02 Rev1.12
+	Fixed:
+	* Fixed title data update.
+	* Fixed location and showing screen data.
+	* Fixed pvp flag when entering event.
+	* Fixed instancing engine.
+	* Fixed pvp update showing when config is enabled.
+	Implemented:
+	* Implemented showing time left on screen.
+
+2017-11-02 Rev1.13
+	Updated:
+	* Text was changed for confirm dialog, for registration. Also added timer for 60s.
+	* Reworked algorithm for team based events, for scores storage and calculation to faster.
+	Fixed:
+	* Fixed moving out of event, to move player out of instance.
+	* Fixed database updates when required.
+	* Fixed False Char Info for L2jUnity.
+	Implemented:
+	* Added configs for player title color, each teams name color and solo based events player colors.
+
+2017-11-06 Rev1.14
+	Updated:
+	* In Last Man Standing and Last Team Standing events, players will not be able to use resurrect skills.
+	Fixed:
+	* Cannot resurrect other team players.
+	* After resurrecting, stopping event revive scheduler.
+	* FalseChar, fixed other configs.
+	* Instancing engine, moving out, one more fix.
+	* Progressive Heal and Radiant Recharge skills fix.
+	* Fixed saving of temporary effects data.
+	Implemented:
+	* Created new config in FalseChar tab, 'titleType', with which you can determine type of title with falseChars.
+
+2017-11-09 Rev1.15 Bugs System, Items restriction, Configs
+	Updated:
+	* When you create new bug to list, with Configs / Rewards / Spawns type, file will be generated with type data.
+	* Revisions now will have titles.
+	* Configs will have conditions and errors if written badly.
+	Implemented:
+	* Maximum enchant level for items.
+	* Can restrict which items cannot be used / equipped.
+	* Can restrict which skills cannot be used.
+	Fixed:
+	* Fixed error, when trying to attack summon.
+	* Fixed Screen Data. (Team Based now will show info and Solo Based will show Top 3).
+	* Fixed registration packet, after pressing Ok.
+	* L2jUnity: Fixed Last Man Standing, to end event, after all players get killed, except 1.
+	* L2jUnity: Fixed despawning all pets and servitors on teleport to Event.
+
+2017-11-12 Rev1.16 New Events
+	Implemented:
+	* Simon Says. Ability to enable skill/social action/item uses. Ability to choose gameplay type, either with scores, either with disquallifies. Ability to set random required time to perform an action.
+	* VIP Team vs Team. Ability to choose, how players will get scores, either only from VIP, either from all but VIP multiplied by X. Ability to set VIP change, either after each VIP death, either only after logout or AFK (AFK not implemented yet).
+	* Lucky Chest. Players will have to open chests, may get paralyze, root, sleep, may die, may get 1, 3 points, may lose 1, 3 points.
+	* Capture The Flag. Ability to choose, either flag will be instantly returned to base, after killing carrier, either it will be given to killer and killer has to return it to base, ability to make several flags for each team and so on.
+	* Implemented check, when destroying item, when trying to drop item.
+
+2017-11-12 Rev1.17 Security, adaptions
+	* Reworked security and licensing system.
+	* Reworked adaption to other packs.
+
+2017-11-17 Rev1.18 Simon Says
+	* Simon Says, will not choose item, which cannot be used.
+	* Simon Says, will not choose skill, which is resurrect or teleport type.
+
+2017-12-03 Rev1.19 Simon Says
+	Implemented:
+	* Map Status checker, to see map requirements for exact event.
+	Fixed:
+	* Interlude, fixed Map Spawns window, when adding too much, window will not appear.
+	* Fixed Capture The Flag, to spawn flags only when event starts.
+
+2018-01-06 Rev1.20 Security, Map, Configs
+	Updated:
+	* Security system.
+	* Small changes in Event Configs, specific event configs have their tab.
+	Fixed:
+	* Interlude, partial fix for Instance engine.
+	Implemented:
+	* Implemented function, to see if map is available for event also some more map information is shown.
+	* Implemented HWID and IP protections, with ability to turn them on for registration or for rewards.
+
+2018-01-13 Rev1.21 Reg NPC, Cboard
+	Updated:
+	* Each event now can be enabled/disabled.
+	* Each map now can be enabled/disabled.
+	* Event engine is now adapted to Gracia Final.
+	* Enlarged config text option.
+	* Configs with options, now on open are selected as their current value.
+	* Removed max level restriction, if server has custom max level.
+	Fixed:
+	* Fixed error with canBeginCast.
+	* Fixed Licence checker errors.
+	* Fixed CTF event, when Flags were spawned on registration start.
+	* Fixed voiced register/unregister commands, to disable them.
+	Implemented:
+	* Created registration npc, with abilities to spawn in different ways.
+	* Implemented Community Board tab, which can be accessed for players, to see information or register to event.
+
+2018-01-14 Rev1.22 Player, Event statistics
+	Implemented:
+	* Player statistics which shows information about overall player statistics and top5 events by wins percentage.
+	* Event statistics which shows information about overall event data like scores, deaths and also top10 players by scores.
+
+2018-01-25 Rev1.23 Boss Fight, description, fixes
+	Fixed:
+	* Fixed CTF bug, with equipping/unequipping items and flags.
+	* Fixed Fake Players configs, to disable item appearance by setting id to 0.
+	Updated:
+	* Reworked Screen Message engine for better info showing.
+	* Reworked team splitting, not to split players unequally.
+	Implemented:
+	* Automatic descriptions for each event.
+	* New Boss Fight event.
+	* Implement 'Holder' id for CTF event, if different id, flag appearance will change to new, when flag will be taken.
+
+2018-01-27 Rev1.24 CTF, AFK, Warnings
+	Updated:
+	* Reworked Capture the Flag event, for better carriers selection, better selection, where to put flag back and implemented function, to do something, when carrier kills other carrier.
+	* Reworked respawn system, for better performance.
+	Implemented:
+	* Added config to set if players can use heal, or heal others.
+	* Created AFK protection.
+	* Implemented Warnings system, which will prohibit player to enter event for some time, when collects certain amount of warnings.
+	* Implemented Domination event.
