@@ -228,3 +228,6 @@
 	* Created AFK protection.
 	* Implemented Warnings system, which will prohibit player to enter event for some time, when collects certain amount of warnings.
 	* Implemented Domination event.
+
+2018-02-03 Rev1.25 Test
+	* Testing remote changelog.
