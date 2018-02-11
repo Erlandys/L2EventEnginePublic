@@ -219,7 +219,7 @@
 	* New Boss Fight event.
 	* Implement 'Holder' id for CTF event, if different id, flag appearance will change to new, when flag will be taken.
 
-2018-01-27 Rev1.24 CTF, AFK, Warnings
+2018-02-03 Rev1.24 CTF, AFK, Warnings
 	Updated:
 	* Reworked Capture the Flag event, for better carriers selection, better selection, where to put flag back and implemented function, to do something, when carrier kills other carrier.
 	* Reworked respawn system, for better performance.
@@ -228,3 +228,4 @@
 	* Created AFK protection.
 	* Implemented Warnings system, which will prohibit player to enter event for some time, when collects certain amount of warnings.
 	* Implemented Domination event.
+	* Implemented remote changelog loading.

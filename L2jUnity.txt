@@ -219,7 +219,7 @@
 	* New Boss Fight event.
 	* Implement 'Holder' id for CTF event, if different id, flag appearance will change to new, when flag will be taken.
 
-2018-01-27 Rev1.24 CTF, AFK, Warnings
+2018-02-10 Rev1.24 CTF, AFK, Warnings
 	Updated:
 	* Reworked Capture the Flag event, for better carriers selection, better selection, where to put flag back and implemented function, to do something, when carrier kills other carrier.
 	* Reworked respawn system, for better performance.
@@ -228,3 +228,13 @@
 	* Created AFK protection.
 	* Implemented Warnings system, which will prohibit player to enter event for some time, when collects certain amount of warnings.
 	* Implemented Domination event.
+	* Implemented remote changelog loading.
+	Fixed thanks to L2Vehiron reports:
+	* Increased maximum party members config up to 10.
+	* Domination event: 'percentPerPlayer' can now be edited.
+	* Fixed configs which requested for Npc Template as number in Boss Fight and Domination events.
+	* Fixed showing maps in assign page (now can see all of the maps).
+	* Fixed status/assign possibility for Domination event.
+	* Probably fixed error, when trying to add to parties, still need feedback.
+	Fixed thanks to Kazumi reports:
+	* Fixed error, when trying fastly to use voiced register and then unregister commands.
