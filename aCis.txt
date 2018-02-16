@@ -238,3 +238,20 @@
 	* Probably fixed error, when trying to add to parties, still need feedback.
 	Fixed thanks to Kazumi reports:
 	* Fixed error, when trying fastly to use voiced register and then unregister commands.
+
+2018-02-16 Rev1.25 Language, Spawns, Admin Controls
+	Implemented:
+	* Created Language system, which covers all possible texts, which normal players will receive. (Can be individually selected).
+	* Implemented feature to teleport to map spawn.
+	* Implemented admin control, to set exact next event.
+	* Implemented admin control, to forcefully register / unregister player to / from event. (If event is running, player will be moved in or moved out).
+	* Implemented admin control, to move to event, without registration.
+	* Implemented ability to close/open doors. This is managed by Map Spawn named 'Door'.
+	* Implemented AI functionality for Map Guards.
+	* Implemented Observe event function, for players to 'Observe' event, like olympiad game.
+	* Implemented voiced command 'respawn', for players who are stuck, to respawn to their spawn location.
+	Updated:
+	* Updated 'Show' spawn feature. Spawns with possible radius will show radius (Adena will be dropped around the spawn as radius markers).
+	* Updated 'Show' spawn feature. Now when player press 'Show' spawn, arrow above player head will appear, pointing to spawn.
+	* Added new reward types: Pvp Score and Pk Score.
+	* Added ability to create MultiLayered (Fence with Height) fence.
