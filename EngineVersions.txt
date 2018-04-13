@@ -1,4 +1,4 @@
-Sunrise 1.25
-L2jUnity 1.25
-aCis 1.25
-L2Pride 1.25
+Sunrise 1.26
+L2jUnity 1.26
+aCis 1.26
+L2Pride 1.26
