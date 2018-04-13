@@ -256,7 +256,7 @@
 	* Added new reward types: Pvp Score and Pk Score.
 	* Added ability to create MultiLayered (Fence with Height) fence.
 
-2018-04-13 Rev1.26 Fixes
+2018-04-13 Rev1.26 Fixes, Ordering, Base Defense, Buffer
 	Fixed:
 	* L2Pride: Move when targeting Event Registration Npc.
 	* L2Pride: Errors when spawning Map Guard.
