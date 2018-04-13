@@ -255,3 +255,20 @@
 	* Updated 'Show' spawn feature. Now when player press 'Show' spawn, arrow above player head will appear, pointing to spawn.
 	* Added new reward types: Pvp Score and Pk Score.
 	* Added ability to create MultiLayered (Fence with Height) fence.
+
+2018-04-13 Rev1.26 Fixes
+	Fixed:
+	* L2Pride: Move when targeting Event Registration Npc.
+	* L2Pride: Errors when spawning Map Guard.
+	* Heading can be set to registration NPC.
+	* Bug report system changed the output of bug text file.
+	* Players in tops will now show real names instead of fake ones.
+	* Last Man Standing and Last Team Standing events will check online players (for event to end).
+	Implemented:
+	* Rewards can now be set to be given, to specific classes.
+	* Events now can be ordered in certain sequences, not a random ones every time.
+	* Bug report system now has ability to send bug list to server.
+	* Implemented BaseDefense event.
+	* Players in instance cannot join event.
+	* Healers can receive scores for doing X amount of healing.
+	* Implemented buffer.
