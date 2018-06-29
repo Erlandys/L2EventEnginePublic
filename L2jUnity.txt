@@ -272,3 +272,24 @@
 	* Players in instance cannot join event.
 	* Healers can receive scores for doing X amount of healing.
 	* Implemented buffer.
+2018-06-29 Rev1.27 API, Korean Event, Fixes
+	Implemented:
+	* API system, with ability to create unique events using API.
+	* Korean event, with different amount of rounds, players in rounds.
+	* Implemented class restriction for events.
+	* Implemented ability to disable buff removal on death in event.
+	* Event outputs are written into 'log/EventsLog_xxxx_xx_xx__xx_xx_xx.txt' text files.
+	* Implemented config, to enable 'AFK Title'. When player will receive its first AFK warning, player title will change to AFK title.
+	Reworked:
+	* Changed 'Set Event' function, with ability to set/start event with desired parameters, map, event, registration time etc.
+	* Reworked scheduler, for more stable functioning.
+	* Reworked versioning system, implemented min versions.
+	* Reworked licensing system, to be more stable and multiplatform.
+	Fixed:
+	* Added error tracking for handlers (admin command, bypasses...)
+	* Added more checks on event configs parsing.
+	* Fixed errors when trying to create empty buffer categorie.
+	* Fixed error, when trying to check event sequence, but there are still no events.
+	* Fixed screen messages.
+	Updated:
+	* Added more debug outputs to console.
