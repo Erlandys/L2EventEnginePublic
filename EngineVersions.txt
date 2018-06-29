@@ -1,4 +1,8 @@
-Sunrise 1.26
-L2jUnity 1.26
-aCis 1.26
-L2Pride 1.26
+Sunrise 1.27
+L2jUnity 1.27
+aCis 1.27
+L2Pride 1.27
+L2jUnityKazumi 1.27
+L2jMobius_Antharas 1.27
+L2jMobius_Zaken 1.27
+L2jMobius_Saviors 1.27
