@@ -272,6 +272,7 @@
 	* Players in instance cannot join event.
 	* Healers can receive scores for doing X amount of healing.
 	* Implemented buffer.
+
 2018-06-29 Rev1.27 API, Korean Event, Fixes
 	Implemented:
 	* API system, with ability to create unique events using API.
